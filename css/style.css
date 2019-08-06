@@ -10,7 +10,6 @@ body{
 i{
     margin-right: 10px;
 }
-
 @media (max-width: 1000px){
     .topnav{
         overflow: hidden;
@@ -58,7 +57,20 @@ i{
         color:white;
     }
 }
-
+@media (max-width: 400px){
+    .navbar li{
+        font-size: var(--Mphone-font-size)
+    }
+}
+@media (max-width: 330px){
+    .navbar{
+        height: 2.8em;
+    }
+    .navbar li{
+        font-size: var(--Sphone-font-size);
+        padding: 3px;
+    }
+}
 @media (min-width: 1000px){
     .topnav{
         overflow: hidden;
