@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap&subset=cyrillic,cyrillic-ext');
+
+body{
+    font-family: var(--default-font-family);
+}
+
+@media(max-width: 1000px){
+    body{font-size: var(--phone-font-size);}
+    .topnav a{
+        
+    }
+}
+@media(min-width: 1000px){
+    body{font-size: var(--normal-font-size);}
+    .topnav h1{
+        font-size: var(--title-font-size);
+        font-family: var(--title-font-family);
+        font-weight: 700;
+        letter-spacing: 2.5px;
+    }
+}

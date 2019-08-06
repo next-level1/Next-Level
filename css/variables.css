@@ -1,0 +1,8 @@
+:root{
+    --normal-font-size: 18px;
+    --phone-font-size: 10px;
+    --title-font-size: 35px;
+
+    --default-font-family: 'Roboto', sans-serif;
+    --title-font-family: 'Roboto Slab', serif;
+}

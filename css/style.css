@@ -1,0 +1,116 @@
+@import url('variables.css');
+@import url('animations.css');
+@import url('typography.css');
+@import url('buttons.css');
+
+body{
+    margin: 0 auto;
+}
+
+i{
+    margin-right: 10px;
+}
+
+@media (max-width: 1000px){
+    .topnav{
+        overflow: hidden;
+        height: 4em;
+    }
+    .topnav a{
+        color: #250064;
+        text-decoration: none;
+        padding: 10px 20px;
+        float: right;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+    .topnav a:first-child{margin-right: 40px}
+    .topnav h1{
+        float: left;
+        color: #250064;
+        margin-top: 8px;
+        margin-left: 30px;
+        border-bottom: 1px solid #250064;
+        border-top: 1px solid #250064;
+    }
+    .navbar{
+        overflow: hidden;
+        background: #250064;
+        height: 3.2em;
+        display: flex;
+    }
+    .navbar li{
+        background: transparent;
+        color: red;
+        float: left;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid red;
+        border-radius: 3px;
+        margin-left: -20px;
+        margin-top: -5px;
+        list-style-type: none;
+        transition: background 0.3s;
+    }
+    .navbar li:first-child{margin-right: 30px}
+    .navbar .active{
+        background: red;
+        color:white;
+    }
+}
+
+@media (min-width: 1000px){
+    .topnav{
+        overflow: hidden;
+        height: 4em;
+    }
+    .topnav a{
+        color: #250064;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        padding: 10px 20px;
+        float: right;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    .topnav a:first-child{margin-right: 50px}
+    .topnav a:hover{
+        border-bottom: 1px solid red ;
+        color: red;
+    }
+    .topnav h1{
+        float: left;
+        color: #250064;
+        margin-top: 8px;
+        margin-left: 30px;
+        border-bottom: 2px solid #250064;
+        border-top: 2px solid;
+    }
+
+    .navbar{
+        overflow: hidden;
+        background: #250064;
+        position: sticky;
+        height: 4.5em;
+        display: flex;
+    }
+    .navbar li{
+        background: transparent;
+        color: red;
+        float: right;
+        padding: 10px 25px;
+        border: 1px solid red;
+        border-radius: 3px;
+        list-style-type: none;
+        margin-right: 1em;
+        transition: background 0.3s;
+    }
+    .navbar li:hover{
+        background: red;
+        color:white;
+    }
+    .navbar .active{
+        background: red;
+        color:white;
+    }
+}
