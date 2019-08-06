@@ -7,8 +7,15 @@ body{
 
 @media(max-width: 1000px){
     body{font-size: var(--phone-font-size);}
-    .topnav a{
-        
+    .container h1{
+        font-family: var(--title-font-family);
+        font-size: 20px;
+        font-weight: 300; 
+        text-shadow: 2px 2px 2px #333;
+    }
+    .container p{
+        font-weight: 300; 
+        text-shadow: 2px 2px 2px #333;
     }
 }
 @media(min-width: 1000px){
@@ -18,5 +25,15 @@ body{
         font-family: var(--title-font-family);
         font-weight: 700;
         letter-spacing: 2.5px;
+    }
+    .container h1{
+        font-family: var(--title-font-family);
+        font-size: 50px;
+        font-weight: 300; 
+        text-shadow: 3px 3px 3px #333;
+    }
+    .container p{
+        font-weight: 300; 
+        text-shadow: 3px 3px 3px #333;
     }
 }
