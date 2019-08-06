@@ -62,7 +62,7 @@ i{
         font-size: var(--Mphone-font-size)
     }
 }
-@media (max-width: 360px){
+@media (max-width: 370px){
     .navbar{
         height: 2.8em;
     }
