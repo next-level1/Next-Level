@@ -2,19 +2,27 @@
 @import url('animations.css');
 @import url('typography.css');
 @import url('buttons.css');
-
-body{
+body {
     margin: 0 auto;
 }
-i{
+
+i {
     margin-right: 10px;
 }
-@media (max-width: 1000px){
-    .topnav{
+
+@media (max-width: 1000px) {
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .topnav {
         overflow: hidden;
         height: 4em;
     }
-    .topnav a{
+    .topnav a {
         color: #250064;
         text-decoration: none;
         padding: 10px 20px;
@@ -22,8 +30,10 @@ i{
         margin-top: 10px;
         margin-left: -20px;
     }
-    .topnav a:first-child{margin-right: 40px}
-    .topnav h1{
+    .topnav a:first-child {
+        margin-right: 40px
+    }
+    .topnav h1 {
         float: left;
         color: #250064;
         margin-top: 8px;
@@ -31,90 +41,153 @@ i{
         border-bottom: 1px solid #250064;
         border-top: 1px solid #250064;
     }
-    .navbar{
+    .navbar {
         overflow: hidden;
         background: #250064;
-        height: 3.2em;
+        height: 3em;
         display: flex;
     }
-    .navbar li{
+    .navbar li {
         background: transparent;
         color: white;
         float: left;
         text-align: center;
         padding: 5px;
-        border: 1px solid white;
-        border-radius: 3px;
+        border-bottom: 1px solid #250064;
+        border-radius: 1px;
         margin-left: -20px;
         margin-top: -5px;
         list-style-type: none;
         transition: background 0.3s;
     }
-    .navbar li:first-child{margin-right: 30px}
-    .navbar .active{
-        background: white;
-        color:#250064;
+    .navbar li:first-child {
+        margin-right: 30px
     }
-
-    .container{
+    .navbar li:hover {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .navbar .active {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .container {
+        margin-top: -1.2em;
         background-image: url('../images/stud2.jpg');
         background-size: 100% 100%;
         height: 17em;
     }
-    .container h1{
+    .container h1 {
         margin-left: 1em;
-        margin-top: 1em;
+        padding-top: 2em;
         color: white;
-        position: absolute;
     }
-    .container p{
+    .container p {
         margin-left: 7em;
         margin-top: 16em;
         color: white;
-        position: absolute;
     }
-    .container .tran-btn{
-        margin-top: 5em;
-        margin-left: 1em;
+    .container .tran-btn {
+        margin-top: 2em;
+        margin-left: 2em;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .h1 {
+        transform: translateX(8.8em);
+        font-size: 20px;
+        color: #250064;
+        border-radius: 2.5px;
+        padding-bottom: 15px;
+        margin-top: 2em;
+    }
+    .content1 {
+        margin: 20px;
+        margin-top: 6em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 15em);
+        grid-row-gap: 1.5em;
+        justify-content: center;
+    }
+    .content1 div {
+        display: block;
+        color: #250064;
+        text-align: center;
+    }
+    .content1 div i {
+        align-content: center;
+        font-size: 25px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #250064;
+    }
+    .content1 div p {
+        font-size: 16px;
+        margin-top: -10px;
+    }
+    .content1 div h4 {
+        font-size: 17px;
+        margin-top: 5px;
     }
 }
-@media (max-width: 400px){
-    .navbar{
+
+@media (max-width: 400px) {
+    .navbar {
         height: 2.8em;
     }
-    .navbar li{
+    .navbar li {
         font-size: var(--Sphone-font-size);
         padding: 3px;
     }
-    .navbar li:first-child{margin-left: -25px;}
+    .navbar li:first-child {
+        margin-left: -25px;
+    }
 }
-@media (max-width: 1165px){
-    .container p{
+
+@media (min-width: 700px) {
+    .content1 {
+        margin: 20px;
+        margin-top: 6em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 15em);
+        grid-gap: 1.5em;
+        justify-content: center;
+    }
+    .content1 .h1{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1165px) {
+    .container p {
         display: none;
     }
-    .tran-btn{
+    .tran-btn {
         margin-top: 25em;
         margin-left: 7em;
     }
 }
-@media (min-width: 1165px){
-    .container p{
+
+@media (min-width: 1165px) {
+    .container p {
         margin-left: 7em;
         margin-top: 16em;
         color: white;
         position: absolute;
     }
-    .tran-btn{
+    .tran-btn {
         margin-top: 25em;
         margin-left: 7em;
     }
 }
-@media (min-width: 1000px){
-    .topnav{
+
+@media (min-width: 1000px) {
+    .topnav {
         overflow: hidden;
         height: 6em;
     }
-    .topnav a{
+    .topnav a {
         color: #250064;
         text-decoration: none;
         border-bottom: 1px solid transparent;
@@ -123,12 +196,14 @@ i{
         margin-top: 30px;
         margin-right: 10px;
     }
-    .topnav a:first-child{margin-right: 50px}
-    .topnav a:hover{
-        border-bottom: 1px solid #250064 ;
+    .topnav a:first-child {
+        margin-right: 50px
+    }
+    .topnav a:hover {
+        border-bottom: 1px solid #250064;
         color: #250064;
     }
-    .topnav h1{
+    .topnav h1 {
         float: left;
         color: #250064;
         margin-top: 15px;
@@ -136,8 +211,7 @@ i{
         border-bottom: 2px solid #250064;
         border-top: 2px solid;
     }
-
-    .navbar{
+    .navbar {
         overflow: hidden;
         background: #250064;
         position: sticky;
@@ -147,7 +221,7 @@ i{
         height: 3em;
         display: flex;
     }
-    .navbar li{
+    .navbar li {
         margin-top: -0.6em;
         background: transparent;
         color: white;
@@ -159,42 +233,41 @@ i{
         margin-right: 1em;
         transition: border 0.2s;
     }
-    .navbar li:hover{
+    .navbar li:hover {
         color: white;
         border-bottom: 1px solid white;
     }
-    .navbar .active{
+    .navbar .active {
         color: white;
         border-bottom: 1px solid white;
     }
-
-    .container{
+    .container {
         background-image: url('../images/stud2.jpg');
         background-size: 100% 100%;
         height: 35em;
     }
-    .container h1{
+    .container h1 {
         margin-left: 2.5em;
         margin-top: 4em;
         color: white;
         position: absolute;
     }
-    .container p{
+    .container p {
         margin-left: 7em;
         margin-top: 16em;
         color: white;
         position: absolute;
     }
-    .tran-btn{
+    .tran-btn {
         margin-top: 19em;
         margin-left: 7em;
     }
-    button i{
+    button i {
         margin-left: 10px;
         margin-right: -10px;
         margin-top: 5px;
     }
-    .h1{
+    .h1 {
         text-align: center;
         font-size: 50px;
         color: #250064;
@@ -205,7 +278,7 @@ i{
         margin-right: 10em;
         margin-top: 2em;
     }
-    .content1{
+    .content1 {
         margin: 20px;
         margin-top: 6em;
         display: grid;
@@ -214,18 +287,17 @@ i{
         grid-column-gap: 1.5em;
         justify-content: center;
     }
-    .content1 div{
+    .content1 div {
         display: block;
         color: #250064;
     }
-    .content1 div i{
+    .content1 div i {
         font-size: 35px;
         padding-right: 40px;
-        padding-bottom: 20px; 
+        padding-bottom: 20px;
         border-bottom: 1px solid #250064;
     }
-    .content1 div p{
+    .content1 div p {
         font-size: 16px;
     }
-
 }

@@ -1,0 +1,16 @@
+@keyframes btn{
+    0%{
+        background: #250064;
+        border: 1px solid #250064;
+        border-right: 0.5px solid #777;
+        padding: 10px 25px;
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(60deg);
+        transform: translateX(5em);
+    }
+    100%{
+        background: rgba(255, 255, 255, 0.6);
+        transform: rotate(60deg);
+        transform: translateX(-5em);
+    }
+}
