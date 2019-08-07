@@ -328,6 +328,7 @@ i {
         margin-top: 5px;
     }
     .h1 {
+        transform: translateX(0em);
         text-align: center;
         font-size: 50px;
         color: #250064;
