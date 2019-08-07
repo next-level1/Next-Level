@@ -84,14 +84,22 @@
         </div>
         <div>
             <h2>Партньори</h2>
-            <a href="https://softuni.bg/"><p><i class="far fa-hand-point-right"></i> Softwere University</p></a>
-            <a href="#ContactsSection"><p><i class="far fa-hand-point-right"></i>Yardex Company</p></a>
-            <a href="#ContactsSection"><p><i class="far fa-hand-point-right"></i>Yardex Group</p></a>
-            <a href="https://revolutiontechnologies.eu/"><p><i class="far fa-hand-point-right"></i> Revolution Technologies</p></a>
+            <a href="https://softuni.bg/">
+                <p><i class="far fa-hand-point-right"></i> Softwere University</p>
+            </a>
+            <a href="#ContactsSection">
+                <p><i class="far fa-hand-point-right"></i>Yardex Company</p>
+            </a>
+            <a href="#ContactsSection">
+                <p><i class="far fa-hand-point-right"></i>Yardex Group</p>
+            </a>
+            <a href="https://revolutiontechnologies.eu/">
+                <p><i class="far fa-hand-point-right"></i> Revolution Technologies</p>
+            </a>
             <h2>Адрес</h2>
             <p>София, България
-                    кв.Изгрев, ул. "Тинтява" 15-17,
-                    Knowledge ООД</p>
+                кв.Изгрев, ул. "Тинтява" 15-17,
+                Knowledge ООД</p>
         </div>
         <div>
             <h2>Контакти</h2>
@@ -102,12 +110,46 @@
             <p><i class="fas fa-envelope"></i> Knowledge.Bulgaria@abv.bg</p>
             <p><i class="fas fa-envelope"></i> Knowledge.international@gmail.com</p>
             <br>
-            <a href=""><p style="font-size: 20px;margin-top: -5px;"><i class="fas fa-envelope-open-text"></i> Пишете ни</p></a>
+            <a onclick="openForm()">
+                <p style="font-size: 20px;margin-top: -5px;"><i class="fas fa-envelope-open-text"></i> Пишете ни</p>
+            </a>
         </div>
         <div class="div">
             <h1>KNOWLEDGE</h1>
         </div>
+
     </div>
+
+
+    <div class="contacts_form" id="myForm">
+        <div class="containerF">
+            <h1>Пишете ни</h1>
+
+            <b>Вашия имейл, за обратна връзка</b>
+            <input type="password" placeholder="Въведете имейл" required>
+
+            <b>Заглавие</b>
+            <input type="password" required>
+
+            <b>Съдържание</b>
+            <input type="text" required>
+
+            <div class="line">
+                <button type="submit" class="btn">Изпрати</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Отказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>

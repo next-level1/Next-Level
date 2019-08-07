@@ -1,0 +1,65 @@
+* {box-sizing: border-box;}
+
+
+.contacts_form {
+  display: none;
+  position: fixed;
+  bottom: 10em;
+  right: 28em;
+  border: 3px solid #929292;
+  z-index: 6;
+}
+
+.containerF {
+  max-width: 600px;
+  padding: 10px;
+  background-color: white;
+}
+
+.containerF input[type=password]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.containerF input[type=text] {
+    width: 100%;
+    padding: 0px;
+    height: 5em;
+    border: none;
+    background: #f1f1f1;
+  }
+
+.containerF input[type=password]:focus, .containerF input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.containerF .btn {
+  background-color: #250064;
+  border: 1px solid black;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.containerF .cancel {
+  background-color: white;
+  color: #250064;
+  border: 1px solid #250064;
+}
+
+.containerF .btn:hover{
+  opacity: 1;
+}
+
+.line{
+    display: flex;
+}
