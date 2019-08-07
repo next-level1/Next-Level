@@ -2,6 +2,10 @@
 @import url('animations.css');
 @import url('typography.css');
 @import url('buttons.css');
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 auto;
 }
@@ -10,6 +14,8 @@ i {
     margin-right: 10px;
 }
 
+#ContactsSection {}
+
 @media (max-width: 1000px) {
     html, body {
         width: 100%;
@@ -17,6 +23,10 @@ i {
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    i {
+        margin-left: 8px;
     }
     .topnav {
         overflow: hidden;
@@ -59,6 +69,8 @@ i {
         margin-top: -5px;
         list-style-type: none;
         transition: background 0.3s;
+        opacity: 0;
+        animation: nav 0.3s ease-in-out 0.2s forwards;
     }
     .navbar li:first-child {
         margin-right: 30px
@@ -94,7 +106,7 @@ i {
         font-size: 16px;
     }
     .h1 {
-        transform: translateX(8.8em);
+        transform: translateX(8.5em);
         font-size: 20px;
         color: #250064;
         border-radius: 2.5px;
@@ -129,6 +141,35 @@ i {
         font-size: 17px;
         margin-top: 5px;
     }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 25em);
+        grid-row-gap: 2em;
+        justify-content: center;
+        color: white;
+        background: #250064;
+    }
+    .footer div {
+        padding: 20px 20px;
+        overflow: hidden;
+        display: block;
+    }
+    .footer div a{
+        color:white;
+        text-decoration: none;
+        font-size: var(--normal-font-size);
+        border-bottom: 1px solid transparent;
+        transition: color 0.2s;
+    }
+    .footer div a:hover{
+        color: red;
+    }
+    .footer .div h1{
+        display: none;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -154,8 +195,25 @@ i {
         grid-gap: 1.5em;
         justify-content: center;
     }
-    .content1 .h1{
+    .content1 .h1 {
         text-align: center;
+    }
+    .h1 {
+        transform: translateX(8.5em);
+        font-size: 30px;
+        color: #250064;
+        border-radius: 2.5px;
+        padding-bottom: 15px;
+        margin-top: 2em;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 50em);
+        grid-template-rows: repeat(3, 25em);
+        grid-row-gap: 2em;
+        justify-content: center;
+        color: white;
+        background: #250064;
     }
 }
 
@@ -232,6 +290,8 @@ i {
         list-style-type: none;
         margin-right: 1em;
         transition: border 0.2s;
+        opacity: 0;
+        animation: nav 0.3s ease-in-out 0.2s forwards;
     }
     .navbar li:hover {
         color: white;
@@ -300,4 +360,60 @@ i {
     .content1 div p {
         font-size: 16px;
     }
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 25em 5em;
+        justify-content: center;
+        color: white;
+        background: #250064;
+    }
+    .footer div {
+        padding: 20px 20px;
+        overflow: hidden;
+        display: block;
+    }
+    .footer div a{
+        color:white;
+        text-decoration: none;
+        font-size: var(--normal-font-size);
+        border-bottom: 1px solid transparent;
+        transition: color 0.2s;
+    }
+    .footer div a:hover{
+        color: red;
+    }
+    .footer .div{
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+    .footer .div h1{
+        font-family: var(--title-font-family);
+        transform: translateX(7em);
+        float: left;
+        font-size: 60px;
+        color: White;
+        margin-top: -20px;
+        margin-left: 30px;
+        padding-left: 5px;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        grid-column: 2;
+        letter-spacing: 15px;
+    }
+
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 300px;
+    width: 300px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 300px;
+    width: 300px;
 }
