@@ -1,0 +1,28 @@
+<div class="circle">   
+            <a href="images/building.jpg"><div class="smallCircle" style="margin-left: -0.5em; margin-top: -0.2em; background: url('images/building.jpg'); background-size: 100% 100%;"></div></a> 
+            <a href="images/deca2.jpg"><div class="smallCircle" style="margin-left: 9.5em; margin-top: -6em; background: url('images/deca2.jpg'); background-size: 100% 100%;"></div></a> 
+            <a href="images/chin2.jpg"><div class="smallCircle" style="margin-top: 3.5em; margin-left: -0.5em; background: url('images/chin2.jpg'); background-size: 100% 100%;"></div></a> 
+            <a href="images/students.jpg"><div class="smallCircle" style="margin-top: -6em; margin-left: 9.5em; background: url('images/students.jpg'); background-size: 100% 100%;"></div></a> 
+        </div>
+
+        .box_content .circle {
+        margin-top: 25%;
+        background: #250064;
+        grid-column: span 2;
+        grid-row: 2 / span 2;
+        border-radius: 50%;
+        height: 15em;
+        width: 15em;
+        animation: rotate 20s linear infinite;
+    }
+    .box_content .smallCircle {
+        height: 6em;
+        width: 6em;
+        border-radius: 50%;
+        background: red;
+        animation: rotate1 20s linear infinite;
+        opacity: 0.9;
+    }
+    .box_content .circle .smallCircle:hover {
+        opacity: 1;
+    }

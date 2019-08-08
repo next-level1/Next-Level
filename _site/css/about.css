@@ -1,0 +1,99 @@
+
+
+body{
+    font-family: var(--title-font-family);
+}
+@media (max-width:1000px){
+    .topnav {
+        overflow: hidden;
+        height: 4em;
+    }
+    .topnav a {
+        color: #250064;
+        text-decoration: none;
+        padding: 10px 20px;
+        float: right;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+    .topnav a:first-child {
+        margin-right: 40px
+    }
+    .topnav h1 {
+        transform: translateX(0em);
+        float: left;
+        color: #250064;
+        margin-top: 8px;
+        margin-left: 30px;
+        border-bottom: 1px solid #250064;
+        border-top: 1px solid #250064;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 20em 15em;
+        grid-gap: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 5em;
+        margin-bottom: 25em;
+        padding: 10px;
+    }
+    .about div{
+        border-radius: 10px;
+    }
+    .huge{
+        grid-column: span 2;
+        color: #250064;
+    }
+    .about p{
+        margin-left: 1em;
+        font-size: var(--normal-font-size);
+        line-height: 1.7;
+    }
+    .tr{
+        transform: translateX(10em);
+    }
+
+}
+@media (min-width: 1000px){
+    .about{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 15em;
+        grid-gap: 1em;
+        margin: 5em;
+        padding: 10px;
+    }
+    .about div{
+        border-radius: 10px;
+    }
+    .huge{
+        grid-column: span 2;
+        color: #250064;
+    }
+    .about p{
+        margin-left: 1em;
+        font-size: var(--normal-font-size);
+        line-height: 1.7;
+    }
+    .footer2{
+        background: #250064;
+        height: 9em;
+    }
+    .footer2 h1{
+        font-family: var(--title-font-family);
+        transform: translateX(8em);
+        float: left;
+        font-size: 60px;
+        color: White;
+        text-align: center;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        grid-column: 2;
+        letter-spacing: 15px;
+    }
+    .tr{
+        transform: translateX(10em);
+    }
+}
