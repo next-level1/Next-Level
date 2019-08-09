@@ -1,5 +1,10 @@
 .besure{
     height: 8em;
     color: #250064;
-    
+    font-family: var(--title-font-family);
+    margin-bottom: 2em;
+}
+.besure p{
+    text-align: center; 
+    font-size: 27px;
 }
