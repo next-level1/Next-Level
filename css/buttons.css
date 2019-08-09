@@ -13,3 +13,20 @@
     background: #250064;
     border: 1px solid #250064;
 }
+
+.morebtn{
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px;
+    background: transparent;
+    color: #250064;
+    border: 1.5px solid #250064;
+    border-radius: 3px;
+    transition: background 0.3s;
+    font-size: 18px;
+}
+
+.morebtn:hover{
+    background-color: #250064;
+    color: white;
+}
