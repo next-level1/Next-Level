@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/chout.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-css/all.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <title>Knowledge courses</title>
+    <title>Записване за курс</title>
 </head>
 
 <body>
@@ -33,48 +33,42 @@
         </ul>
     </div>
 
-    <div class="cont_box">
-        <div class="content1">
-            <div>
-                <i class="fas fa-bookmark"></i>
-                <h4>Подготовка за матури след 7 клас</h4>
-                <p>По новата програма.</p>
-                <a href="more1.html"><button class="morebtn"> Виж още </button></a>
-            </div>
-            <div>
-                <i class="fas fa-book-open"></i>
-                <h4>Подготовка за матури след 10 клас</h4>
-                <p>По новата програма.</p>
-                <a href="more1.html"><button class="morebtn"> Виж още </button></a>
-            </div>
-            <div>
-                <i class="fas fa-bookmark"></i>
-                <h4>Индивидуално обучение</h4>
-                <p>Частни уроци.</p>
-                <a href="more3.html"><button class="morebtn"> Виж още </button></a>
-            </div>
-            <div>
-                <i class="fas fa-book-open"></i>
-                <h4>Курсове по БЕЛ</h4>
-                <p>Курсовете са организирани с до 10 - 12 ученика.</p>
-                <a href="more2.html"><button class="morebtn"> Виж още </button></a>
-            </div>
-            <div>
-                <i class="fas fa-bookmark"></i>
-                <h4>Курсове по Математика</h4>
-                <p>Курсовете са организирани с до 10 - 12 ученика.</p>
-                <a href="more2.html"><button class="morebtn"> Виж още </button></a>
-            </div>
-            <div>
-                <i class="fas fa-book-open"></i>
-                <h4>Курсове по Английски</h4>
-                <p>Курсовете са организирани с до 10 - 12 ученика.</p>
-                <a href="more2.html"><button class="morebtn"> Виж още </button></a>
-            </div>
-        </div>
-    </div>
-    <div class="besure">
-        <p><b>Knowledge</b> Ви гарантира за качеството на курсовете и на нашите преподаватели.</p>
+    <div class="checkout">
+        <h4>Записване за курс</h4>
+        <select>
+            <option>Изберете вид курс</option>
+            <option>Подготовка за НВО след 7 клас</option>
+            <option>Подготовка за ДЗИ след 10 клас</option>
+            <option>Частни уроци</option>
+            <option>Курсове по Български език</option>
+            <option>Курсове по Английски език</option>
+            <option>Курсове по Математика</option>
+        </select>
+        <div class="title_par">Име на ученик: </div>
+        <div><input type="text" placeholder="Първо име"></div>
+        <div><input type="text" placeholder="Презиме"></div>
+        <div><input type="text" placeholder="Фамилия"></div>
+        <select>
+            <option>Изберете ден от седмицата</option>
+            <option>Понеделник - от 14:30ч. до 17:00ч.</option>
+            <option>Вторник - от 18:00ч. до 20:30ч.</option>
+            <option>Сряда - от 18:30ч. до 21:00ч.</option>
+            <option>Четвъртък - от 18:30ч. до 21:00ч.</option>
+            <option>Петък - от 14:30ч. до 17:00ч.</option>
+            <option>Събота - от 8:00ч. до 10:30ч. / от 12:30ч. до 15:00ч.</option>
+            <option>Неделя - от 8:30ч. до 11:00ч. / от 13:30ч. до 16:00ч.</option>
+        </select>
+        <select>
+            <option>Изберете учебна година</option>
+            <option>2019/2020</option>
+            <option>2020/2021</option>
+            <option>2021/2022</option>
+            <option>2022/2023</option>
+        </select>
+        <div class="title_par">Имейл за обратна връзка:</div>
+        <input type="text" placeholder="Вашия имейл">
+        <div><a onclick="openForm2()"><button class="morebtn" onclick="sure1()">Подай заявка</button></a><a
+                href="courses.html"><button class="morebtn">Отказ</button></div></a>
     </div>
 
     <div class="footer" id="ContactsSection">
@@ -142,6 +136,17 @@
         </div>
     </div>
 
+    <div class="contacts_form" id="Success" style="border: none;">
+        <div class="containerF" style="border: 2px solid #250064; box-shadow: 10px 10px 5px #333;">
+
+            <h2>Благодарим Ви за доверието, очаквайте имейл с повече информация.</h2>
+            <div class="line">
+                <button class="morebtn" onclick="closeForm2()" style="margin-left: 0.5em; margin-right: 0.5em;">Назад</button>
+                <a href="courses.html"><button class="morebtn" style="margin-left: 0.5em; margin-right: 0.5em;">Към другите курсове</button></a>
+            </div>
+        </div>
+    </div>
+
     <script>
         function openForm() {
             document.getElementById("FooterFunc").style.display = "block";
@@ -149,6 +154,18 @@
 
         function closeForm() {
             document.getElementById("FooterFunc").style.display = "none";
+        }
+
+        function openForm2() {
+            document.getElementById("Success").style.display = "block";
+        }
+
+        function closeForm2() {
+            document.getElementById("Success").style.display = "none";
+        }
+
+        function sure1() {
+            alert("Сигурни ли сте, че искате да продължите с дадената информация.");
         }
     </script>
 </body>

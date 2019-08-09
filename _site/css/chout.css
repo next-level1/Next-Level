@@ -1,0 +1,90 @@
+@media (max-width: 1000px) {
+    .checkout {
+        margin: 1em;
+        display: grid;
+        grid-template-columns: 15em;
+        grid-template-rows: repeat(10, 2em) 3em;
+        grid-gap: 0.6em;
+        justify-content: center;
+        justify-items: center;
+        color: #250064;
+    }
+    .checkout select {
+        border: 1px solid #250064;
+        border-radius: 3px;
+        background-color: white;
+        font-weight: 600;
+        font-size: 10px;
+        color: #250064;
+    }
+    .checkout select option {
+        border: 1px solid #250064;
+        color: #250064;
+        font-size: 10px;
+    }
+    .checkout h4 {
+        font-size: 15px;
+        transform: translateY(-1em);
+    }
+    .checkout input[type=text] {
+        border: 1px solid #250064;
+        border-radius: 3px;
+        height: 2em;
+        width: 15em;
+    }
+    .checkout input[type=text]:focus {
+        background: #ebebeb;
+    }
+    .checkout .title_par {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width:1000px) {
+    .checkout {
+        margin: 2em;
+        display: grid;
+        grid-template-columns: 35em;
+        grid-template-rows: repeat(10, 2em) 3em;
+        grid-gap: 0.5em;
+        justify-content: center;
+        justify-items: center;
+        color: #250064;
+    }
+    .checkout select {
+        border: 2px solid #250064;
+        border-radius: 3px;
+        background-color: white;
+        font-weight: 600;
+        font-size: 18px;
+        color: #250064;
+    }
+    .checkout select option {
+        border: 1px solid #250064;
+        color: #250064;
+    }
+    .checkout h4 {
+        font-size: 25px;
+        transform: translateY(-2em);
+        letter-spacing: 3px;
+    }
+    .checkout input[type=text] {
+        border: 2px solid #250064;
+        border-radius: 3px;
+        height: 2.5em;
+        width: 20em;
+    }
+    .checkout input[type=text]:focus {
+        background: #ebebeb;
+    }
+    .checkout .title_par {
+        margin-top: 5px;
+        font-size: 25px;
+    }
+    .checkout .morebtn{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 1.5em;
+    }
+}

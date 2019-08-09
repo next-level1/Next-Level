@@ -3,6 +3,11 @@
 body{
     font-family: var(--title-font-family);
 }
+
+.navbar{
+    font-family: var(--default-font-family);
+}
+
 @media (max-width:1000px){
     .topnav {
         overflow: hidden;
