@@ -111,7 +111,7 @@ i {
         font-size: 16px;
     }
     .h1 {
-        transform: translateX(8.5em);
+        text-align: justify;
         font-size: 20px;
         color: #250064;
         border-radius: 2.5px;
