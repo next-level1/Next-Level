@@ -8,3 +8,13 @@
     text-align: center; 
     font-size: 27px;
 }
+.topnav h1 {
+    font-family: var(--title-font-family);
+    transform: translateX(2em);
+    float: left;
+    color: #250064;
+    margin-top: 8px;
+    margin-left: -1em;
+    border-bottom: 1px solid #250064;
+    border-top: 1px solid #250064;
+}
