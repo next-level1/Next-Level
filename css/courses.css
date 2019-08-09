@@ -1,8 +1,8 @@
 .besure{
-    height: 8em;
+    height: 9em;
     color: #250064;
     font-family: var(--title-font-family);
-    margin-bottom: 2em;
+    margin-bottom: 7.5em;
 }
 .besure p{
     text-align: center; 
@@ -17,4 +17,16 @@
     margin-left: -1em;
     border-bottom: 1px solid #250064;
     border-top: 1px solid #250064;
+}
+@media (min-width: 1000px) {
+    .topnav h1 {
+        font-family: var(--title-font-family);
+        transform: translateX(0em);
+        float: left;
+        color: #250064;
+        margin-top: 8px;
+        margin-left: -1em;
+        border-bottom: 1px solid #250064;
+        border-top: 1px solid #250064;
+    }
 }
