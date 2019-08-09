@@ -65,7 +65,20 @@ body{
         margin-left: 2em;
         margin-right: 2em;
         margin-top: 5em;
-        margin-bottom: 30em;
+        margin-bottom: 35em;
+        padding: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 20em 15em;
+        grid-gap: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 5em;
+        margin-bottom: 45em;
         padding: 10px;
     }
 }
