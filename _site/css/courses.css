@@ -18,6 +18,60 @@
     border-bottom: 1px solid #250064;
     border-top: 1px solid #250064;
 }
+
+.anketa{
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: -6em;
+    background: #250064;
+    color: white;
+    font-size: 20px;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 6em
+}
+.anketa i{
+    margin-right: 10px;
+}
+.anketa a{
+    font-size:20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    margin-left: 0.5em;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+.anketa a:hover{
+    color: #250064;
+    background: white;
+}
+@media(max-width: 1000px){
+    .anketa{
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 1em;
+        background: #250064;
+        color: white;
+        font-size: 16px;
+        padding: 1em;
+        text-align: center;
+        margin-bottom: 6em;
+    }
+    .anketa a{
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        padding: 2px 6px;
+        margin-left: 0.4em;
+        color: white;
+        border: 1px solid white;
+        border-radius: 3px;
+        transition: background 0.3s;
+    }
+}
 @media (min-width: 1000px) {
     .topnav h1 {
         font-family: var(--title-font-family);
