@@ -4,8 +4,8 @@
         margin-right: 10em;
         margin-bottom: 10em;
         display: grid;
-        grid-template-columns: repeat(1, 20em);
-        grid-template-rows: repeat(25, 10em);
+        grid-template-columns: repeat(2, 20em);
+        grid-template-rows: repeat(15, 10em);
         grid-gap: 1em;
         justify-content: center;
         justify-items: center;
@@ -22,7 +22,7 @@
     
     .box_content h3{
         margin-top: 0px;
-        grid-column: span 1;    
+        grid-column: 1 / -1;    
         font-size: 40px;
         color: #250064;
         font-family: var(--title-font-family);
@@ -30,6 +30,27 @@
     .topnav h1 {
         margin-left: 1em;
         font-family: var(--title-font-family);
+    }
+}
+
+@media (max-width: 00px){
+    .box_content h3{
+        margin-top: 0px;
+        grid-column: 1 / span 2;    
+        font-size: 20px;
+        color: #250064;
+        font-family: var(--title-font-family);
+    }
+    .box_content {
+        margin-left: 10em;
+        margin-right: 10em;
+        margin-bottom: 10em;
+        display: grid;
+        grid-template-columns: repeat(1, 20em);
+        grid-template-rows: repeat(25, 10em);
+        grid-gap: 1em;
+        justify-content: center;
+        justify-items: center;
     }
 }
 

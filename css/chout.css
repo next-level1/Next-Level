@@ -37,7 +37,16 @@
     }
     .checkout .title_par {
         margin-top: 5px;
-        font-size: 15px;
+        font-size: 14px;
+    }
+    .checkout .inline{
+        display: flex;
+    }
+    .checkout .morebtn{
+        margin-left:3px;
+        margin-right: 3px;
+        padding: 5px 10px;
+        font-size: 13px;
     }
 }
 

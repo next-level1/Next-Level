@@ -304,7 +304,6 @@ i {
         border-top: 2px solid;
     }
     .navbar {
-        overflow: hidden;
         background: #250064;
         position: sticky;
         position: -webkit-sticky;
@@ -312,6 +311,7 @@ i {
         z-index: 5;
         height: 3em;
         display: flex;
+        align-content: center;
     }
     .navbar li {
         margin-top: -0.6em;
